@@ -1,6 +1,8 @@
 
 ## Configuración del Proyecto
 
+se utilizo el proyecto de noticias para realizar el proyecto final
+
 ### Requisitos
 
 - Node.js
