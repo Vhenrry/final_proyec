@@ -34,3 +34,14 @@ ModalNews.tsx
         price: parseFloat((Productos.price+"").replace(',', '.')),
       }
 
+## Inplementacion de cypress
+
+## Automatización de Flujos Críticos
+
+1. Login
+   Autologin.spec.cy.ts
+
+2. Crear Producto
+   CrearProducto.spec.cy.ts
+   
+
