@@ -47,5 +47,22 @@ ModalNews.tsx
 
 2. Crear Producto
    CrearProducto.spec.cy.ts
-   
+3. Editar Producto
+   EditarProducto.spec.cy.ts
+
+4. Eliminar Producto
+   EliminarProducto.spec.cy.ts
+
+5. Crear, Verificar y eliminar un producto
+   VerificacionProductoYeliminacion.spec.cy.ts
+
+## Automatización de Flujos alternos
+
+1. Crear Producto
+   LoginFail.spec.cy.ts
+
+2. Crear producto sin precio sale error se corrige se verifica y se elimina
+   ErrorCrearProducto.spec.cy.ts
+3. Creacion doble de un producto se requiere correccion
+   Autologin.spec.cy.ts
 
