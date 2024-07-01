@@ -17,7 +17,7 @@ describe('Crear producto, verificacion de producto, eliminacion de producto', ()
     //Edicion de producto
     cy.get('.MuiToolbar-root > .MuiButtonBase-root').click();//salir
     cy.get('[href="/"]').click();
-    cy.get(':nth-child(8) > .MuiPaper-root > .MuiButtonBase-root > :nth-child(1) > .MuiTypography-h3').click();
+    cy.get(':nth-child(10) > .MuiPaper-root > .MuiButtonBase-root > :nth-child(1) > .MuiTypography-h3').click();
     cy.get('.MuiListItemText-root > .MuiTypography-root').should('be.visible');
     cy.contains('Producto Oferta').should('be.visible');
     cy.get('[href="/login"]').click();

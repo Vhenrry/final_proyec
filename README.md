@@ -66,3 +66,8 @@ ModalNews.tsx
 3. Creacion doble de un producto se requiere correccion
    Autologin.spec.cy.ts
 
+## Agregando un video para verificacion del uso de cypress en todo el proceso
+
+# Carpeta video_testing
+
+   video_testing > Video Testing Cypress.mp4

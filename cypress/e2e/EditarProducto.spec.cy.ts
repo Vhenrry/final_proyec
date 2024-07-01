@@ -17,7 +17,7 @@ describe('Editar el producto Creado anterior', () => {
     //Edicion de producto
     cy.contains('Cepillo Electrico').should('be.visible');
     cy.contains('Cepillo de dientes electrico SONIC T302').should('be.visible');
-    cy.get('#editar14 > .material-icons').click();
+    cy.get('#editarCepilloElectrico > .material-icons').click();
     cy.contains('Editar Producto').should('be.visible');
     cy.get('#description').clear().type('Cepillo de dientes electrico SONIC T302 proteccion IPX8 150 dias de bateria');
     cy.get('#price').clear().type('360');
