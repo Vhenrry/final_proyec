@@ -8,11 +8,13 @@ describe('Editar el producto Creado anterior', () => {
     cy.get('.MuiButton-contained > .MuiTypography-root').click();
     cy.contains('Bienvenido Usuario Admin.').should('be.visible');
     cy.url().should('include','/admin/home');
-    //cy.get('.MuiBox-root > .MuiButtonBase-root').click();
-    //cy.get('#name').type('Cepillo Electrico');
-    //cy.get('#description').type('Cepillo de dientes electrico SONIC T302');
-    //cy.get('#price').type('400');
-    //cy.get('form > .MuiButtonBase-root').click();
+    cy.get('.MuiBox-root > .MuiButtonBase-root').click();
+    //Creacion de producto
+    cy.get('#name').type('Cepillo Electrico');
+    cy.get('#description').type('Cepillo de dientes electrico SONIC T302');
+    cy.get('#price').type('400');
+    cy.get('form > .MuiButtonBase-root').click();
+    //Edicion de producto
     cy.contains('Cepillo Electrico').should('be.visible');
     cy.contains('Cepillo de dientes electrico SONIC T302').should('be.visible');
     cy.get('#editar14 > .material-icons').click();
