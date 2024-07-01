@@ -16,7 +16,7 @@ export default async function DemoSSRPage() {
   return (
     <Container>
       <Typography variant="h2" component="h1" gutterBottom>
-        Últimas noticias
+        Últimos Productos
       </Typography>
       <NewsList news={news} />
     </Container>

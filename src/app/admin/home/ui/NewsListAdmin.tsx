@@ -190,11 +190,12 @@ const NewsAdminList: React.FC = () => {
                       <IconoTooltip
                         titulo={'editar'}
                         icono={'edit'}
+                        data-testid={`editar${item.id}`}
                         accion={() => {
                           editarNoticia(item)
                         }}
                         name={'editar'}
-                        id={`${item.id}`}
+                        id={`editar${item.name?.replace(' ','')}`}
                       />
                       <IconoTooltip
                         titulo={'eliminar'}
@@ -204,7 +205,7 @@ const NewsAdminList: React.FC = () => {
                           abrirAlertaBorrar(item)
                         }}
                         name={'eliminar'}
-                        id={`${item.id}`}
+                        id={`eliminar${item.name?.replace(' ','')}`}
                       />
                     </Box>
                   </Grid>

@@ -60,7 +60,7 @@ const ClientComponent = ({ news }: { news: News }) => {
     >
       <CircularProgress />
       <Typography variant="h6" style={{ marginLeft: '1rem' }}>
-        Cargando noticia...
+        Cargando Productos...
       </Typography>
     </Box>
   )
