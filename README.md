@@ -34,7 +34,11 @@ ModalNews.tsx
         price: parseFloat((Productos.price+"").replace(',', '.')),
       }
 
-## Inplementacion de cypress
+## Inplementacion de cypress abrir para ejecutar los ejercicios
+
+   ```bash
+   npx cypress open
+   ```
 
 ## Automatización de Flujos Críticos
 
