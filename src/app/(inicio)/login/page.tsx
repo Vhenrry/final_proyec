@@ -21,6 +21,7 @@ const LoginContainer = () => {
 
   const [loading, setLoading] = useState<boolean>(false)
   const router = useRouter()
+  const [errorMessage, setErrorMessage] = useState('');
 
   const iniciarSesion = async ({ usuario, contrasena }: LoginType) => {
     try {
@@ -36,6 +37,7 @@ const LoginContainer = () => {
 
       console.log(response)
     } catch (error) {
+      setErrorMessage('Nombre de usuario o contraseña incorrectos');
       console.log(error)
     } finally {
       setLoading(false)
@@ -127,6 +129,11 @@ const LoginContainer = () => {
                   Iniciar sesión
                 </Typography>
               </Button>
+              {errorMessage && (
+                  <Typography fontSize={'small'} sx={{ fontWeight: '600', color: 'red' }}>
+                    {errorMessage}
+                  </Typography>
+                )}
             </Box>
           </form>
         </Card>
@@ -136,3 +143,7 @@ const LoginContainer = () => {
 }
 
 export default LoginContainer
+function setErrorMessage(arg0: string) {
+  throw new Error('Function not implemented.')
+}
+
